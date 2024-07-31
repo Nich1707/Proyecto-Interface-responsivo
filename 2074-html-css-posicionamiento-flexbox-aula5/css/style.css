@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-primario: #000000;
+  --color-secundario: #f6f6f6;
+  --color-terciario: #22d4fd;
+
+  --fonte-montserrant: "Montserrat", sans-serif;
+  --fonte-krona-one: "Krona One", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+}
+.header {
+  padding: 2% 0% 0% 15%;
+}
+.header__menu {
+  display: flex;
+  gap: 80px;
+}
+.headee__mune_link {
+  font-family: var(--fonte-montserrant);
+  font-weight: 600;
+  color: var(--color-terciario);
+  text-decoration: none;
+}
+
+.presentacion {
+  padding: 6% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px;
+}
+
+.presentacion__contenido {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.presentacion__contenido__titulo {
+  font-size: 2rem;
+  font-family: var(--fonte-krona-one);
+}
+.titulo-destaque {
+  color: var(--color-terciario);
+}
+
+.presentacion__contenido__texto {
+  font-size: 1.5rem;
+  font-family: var(--fonte-montserrant);
+}
+.presentacion__enlaces {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.presentacion__enlaces__link {
+  width: 50%;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 21.5px 0;
+  text-decoration: none;
+  color: var(--color-secundario);
+  font-family: var(--fonte-montserrant);
+  border: 2px solid #22d4fd;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.presentacion__enlaces_subtitulo {
+  font-family: var(--fonte-krona-one);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.presentacion__enlaces__link:hover {
+  /*:hover serve para efeitos de quando o mouse passa por algum elemento*/
+  background-color: #272727;
+  padding: 3%;
+}
+
+.presentacion__imagen {
+  width: 50%;
+  height: 80%;
+}
+.footer {
+  background-color: var(--color-terciario);
+  font-family: var(--fonte-montserrant);
+  text-align: center;
+  color: var(--color-primario);
+  padding: 1.5rem;
+  font-weight: 600;
+}
+@media (max-width: 1200px) {
+  .header {
+    padding: 10%;
+  }
+  .presentacion {
+    flex-direction: column-reverse;
+  }
+  .header {
+    padding: 10%;
+  }
+  .header__menu {
+    justify-content: center;
+  }
+  .presentacion__contenido {
+    width: auto;
+  }
+}
